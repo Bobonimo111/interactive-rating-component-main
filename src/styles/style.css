@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: hsl(213, 19%, 18%);
+}
