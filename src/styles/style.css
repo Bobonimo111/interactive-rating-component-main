@@ -1,14 +1,81 @@
 body {
+    height: 100vh;
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr minmax(320px, 400px) 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 100vh;
     background-color: hsl(216, 12%, 8%);
+}
+
+h1,
+.button {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 25px;
 }
 
 .container {
     grid-column: 2/3;
     grid-row: 2/3;
+    margin: 0 15px;
+    padding: 15px;
     background-color: hsl(213, 19%, 18%);
+    border-radius: 15px;
+    color: hsl(217, 12%, 63%);
+    font-family: "Overpass";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.icone {
+    height: 45px;
+    width: 45px;
+    background-color: hsl(215, 9%, 27%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.valores {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.valores>span {
+    height: 50px;
+    width: 50px;
+    background-color: hsl(215, 9%, 27%);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.button {
+    background-color: hsl(25, 97%, 53%);
+    padding: 15px;
+    margin: 25px 0;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    user-select: none;
+    cursor: pointer;
+}
+
+.valores>span:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    user-select: none;
+    cursor: pointer;
+}
+
+.valores>span:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
