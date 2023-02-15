@@ -50,6 +50,7 @@ h1,
     border-radius: 50%;
     display: grid;
     place-content: center;
+    transition: 0.1s;
 }
 
 .valores>span:hover {
@@ -59,15 +60,15 @@ h1,
     cursor: pointer;
 }
 
-.valores>span.selecionado {
+.valores>span.primario {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     user-select: none;
     cursor: pointer;
 }
 
-.valores>span.proximo {
-    background-color: hsl(25, 97%, 53%);
+.valores>span.secundario {
+    background-color: hsl(0, 0%, 43%);
     color: hsl(0, 0%, 100%);
     user-select: none;
     cursor: pointer;
