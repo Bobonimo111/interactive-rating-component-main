@@ -1,3 +1,7 @@
+
+
+[Pagina para teste](https://bobonimo111.github.io/interactive-rating-component-main/)
+
 # **Expectativa de visual**
 
 ## **Desktop**
